@@ -1,0 +1,23 @@
+{
+	"name": "csv_gen2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_gen2_storage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "archive",
+				"fileSystem": "allocation-arbitration"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
